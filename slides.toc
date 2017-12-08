@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Install and Load Libraries}{3}{0}{1}
+\beamer@sectionintoc {2}{Access Gutenberg database}{8}{0}{2}
+\beamer@sectionintoc {3}{Download Peter Pan}{9}{0}{3}
+\beamer@sectionintoc {4}{Unpack The Words}{10}{0}{4}
+\beamer@sectionintoc {5}{Remove Common Words}{11}{0}{5}
+\beamer@sectionintoc {6}{Frequency Count}{12}{0}{6}
+\beamer@sectionintoc {7}{The Wordcloud}{13}{0}{7}
