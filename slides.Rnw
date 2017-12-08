@@ -1,6 +1,6 @@
 \documentclass{beamer}
-\usetheme{bergen}
-\usecolortheme{albatross}
+
+
 
 \begin{document}
 
@@ -59,8 +59,7 @@
   \frametitle{Download Peter Pan}
     <<message=FALSE,warning=FALSE>>=
 	  peter_pan<-gutenberg_download(39755)
-   colnames(peter_pan)
-   substr(peter_pan$text[500],25,30)
+    colnames(peter_pan)
     @
 \end{frame}
 
@@ -71,7 +70,7 @@
 		  words_df<-peter_pan%>%
   unnest_tokens(word,text)
    
-      words_df
+      words_df[1:8,2]
       @
 \end{frame}
 
@@ -82,7 +81,7 @@
 		  words_df<-words_df%>%
   filter(!word %in% stop_words$word) 
    
-    words_df
+    words_df[1:8,]
       @
 \end{frame}
 
@@ -95,7 +94,7 @@
     group_by(word)%>%
     summarize(count=n())
     
-      word_freq
+      word_freq[1:8,]
       @
 \end{frame}
 
