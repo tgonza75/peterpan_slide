@@ -101,9 +101,13 @@
 \section{The Wordcloud}
 \begin{frame}[fragile]
 	\frametitle{The Wordcloud}
-    <<warning=FALSE,message=FALSE>>=
-		wordcloud(word_freq$word,word_freq$count,min.freq=8)
-      @
+<<>>=
+#wordcloud(word_freq$word,word_freq$count,min.freq=8)
+@
+\begin{figure}
+\includegraphics[scale=.5]{wordcloud}
+\end{figure}
+
 \end{frame}
 
 
